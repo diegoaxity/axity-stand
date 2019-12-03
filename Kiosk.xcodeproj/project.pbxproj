@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		334B78F6DE9D1B2D771926D9 /* Pods_Kiosk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA92D56FABBB0BCD38880E2 /* Pods_Kiosk.framework */; };
+		844C1BF623970A2E00AFF8DD /* ok.json in Resources */ = {isa = PBXBuildFile; fileRef = 844C1BF423970A2E00AFF8DD /* ok.json */; };
+		844C1BF723970A2E00AFF8DD /* error.json in Resources */ = {isa = PBXBuildFile; fileRef = 844C1BF523970A2E00AFF8DD /* error.json */; };
+		844C1BF92397152100AFF8DD /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 844C1BF82397152100AFF8DD /* loading.json */; };
 		84759C162395BF5A00FAD099 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84759C152395BF5A00FAD099 /* AppDelegate.swift */; };
 		84759C182395BF5A00FAD099 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84759C172395BF5A00FAD099 /* SceneDelegate.swift */; };
 		84759C1A2395BF5A00FAD099 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84759C192395BF5A00FAD099 /* ViewController.swift */; };
@@ -18,6 +21,7 @@
 		84759C382395BF5D00FAD099 /* KioskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84759C372395BF5D00FAD099 /* KioskUITests.swift */; };
 		84759C492395D76E00FAD099 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84759C482395D76E00FAD099 /* ScanViewController.swift */; };
 		84759C4C2395D7DE00FAD099 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84759C4B2395D7DE00FAD099 /* Extensions.swift */; };
+		84759C4F2396D7B100FAD099 /* Newtworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84759C4E2396D7B100FAD099 /* Newtworking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,9 @@
 
 /* Begin PBXFileReference section */
 		6D85452235F6055D3D06FD5D /* Pods-Kiosk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kiosk.debug.xcconfig"; path = "Target Support Files/Pods-Kiosk/Pods-Kiosk.debug.xcconfig"; sourceTree = "<group>"; };
+		844C1BF423970A2E00AFF8DD /* ok.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ok.json; sourceTree = "<group>"; };
+		844C1BF523970A2E00AFF8DD /* error.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = error.json; sourceTree = "<group>"; };
+		844C1BF82397152100AFF8DD /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		84759C122395BF5A00FAD099 /* Kiosk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kiosk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84759C152395BF5A00FAD099 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84759C172395BF5A00FAD099 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +62,7 @@
 		84759C392395BF5D00FAD099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84759C482395D76E00FAD099 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		84759C4B2395D7DE00FAD099 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		84759C4E2396D7B100FAD099 /* Newtworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Newtworking.swift; sourceTree = "<group>"; };
 		BDA92D56FABBB0BCD38880E2 /* Pods_Kiosk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kiosk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2CFA3D8C9CBC28C449ECCFB /* Pods-Kiosk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kiosk.release.xcconfig"; path = "Target Support Files/Pods-Kiosk/Pods-Kiosk.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +93,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		844C1BF323970A1900AFF8DD /* lottieJSON */ = {
+			isa = PBXGroup;
+			children = (
+				844C1BF82397152100AFF8DD /* loading.json */,
+				844C1BF523970A2E00AFF8DD /* error.json */,
+				844C1BF423970A2E00AFF8DD /* ok.json */,
+			);
+			path = lottieJSON;
+			sourceTree = "<group>";
+		};
 		84759C092395BF5A00FAD099 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +128,8 @@
 		84759C142395BF5A00FAD099 /* Kiosk */ = {
 			isa = PBXGroup;
 			children = (
+				844C1BF323970A1900AFF8DD /* lottieJSON */,
+				84759C4D2396D79800FAD099 /* Networking */,
 				84759C4A2395D7AA00FAD099 /* Utilities */,
 				84759C452395D74100FAD099 /* Views */,
 				84759C152395BF5A00FAD099 /* AppDelegate.swift */,
@@ -171,6 +191,14 @@
 				84759C4B2395D7DE00FAD099 /* Extensions.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		84759C4D2396D79800FAD099 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				84759C4E2396D7B100FAD099 /* Newtworking.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		E1DD19528D743AD718136A32 /* Pods */ = {
@@ -296,7 +324,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844C1BF723970A2E00AFF8DD /* error.json in Resources */,
 				84759C222395BF5D00FAD099 /* LaunchScreen.storyboard in Resources */,
+				844C1BF92397152100AFF8DD /* loading.json in Resources */,
+				844C1BF623970A2E00AFF8DD /* ok.json in Resources */,
 				84759C1F2395BF5D00FAD099 /* Assets.xcassets in Resources */,
 				84759C1D2395BF5A00FAD099 /* Main.storyboard in Resources */,
 			);
@@ -370,6 +401,7 @@
 				84759C162395BF5A00FAD099 /* AppDelegate.swift in Sources */,
 				84759C182395BF5A00FAD099 /* SceneDelegate.swift in Sources */,
 				84759C492395D76E00FAD099 /* ScanViewController.swift in Sources */,
+				84759C4F2396D7B100FAD099 /* Newtworking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

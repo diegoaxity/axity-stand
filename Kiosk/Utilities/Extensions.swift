@@ -33,6 +33,5 @@ class extensions {
             alpha: CGFloat(1.0)
         )
     }
-    
 
 }
