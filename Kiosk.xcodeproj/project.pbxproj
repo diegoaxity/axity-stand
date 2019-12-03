@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		334B78F6DE9D1B2D771926D9 /* Pods_Kiosk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA92D56FABBB0BCD38880E2 /* Pods_Kiosk.framework */; };
 		84759C162395BF5A00FAD099 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84759C152395BF5A00FAD099 /* AppDelegate.swift */; };
 		84759C182395BF5A00FAD099 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84759C172395BF5A00FAD099 /* SceneDelegate.swift */; };
 		84759C1A2395BF5A00FAD099 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84759C192395BF5A00FAD099 /* ViewController.swift */; };
@@ -15,6 +16,8 @@
 		84759C222395BF5D00FAD099 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84759C202395BF5D00FAD099 /* LaunchScreen.storyboard */; };
 		84759C2D2395BF5D00FAD099 /* KioskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84759C2C2395BF5D00FAD099 /* KioskTests.swift */; };
 		84759C382395BF5D00FAD099 /* KioskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84759C372395BF5D00FAD099 /* KioskUITests.swift */; };
+		84759C492395D76E00FAD099 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84759C482395D76E00FAD099 /* ScanViewController.swift */; };
+		84759C4C2395D7DE00FAD099 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84759C4B2395D7DE00FAD099 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D85452235F6055D3D06FD5D /* Pods-Kiosk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kiosk.debug.xcconfig"; path = "Target Support Files/Pods-Kiosk/Pods-Kiosk.debug.xcconfig"; sourceTree = "<group>"; };
 		84759C122395BF5A00FAD099 /* Kiosk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kiosk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84759C152395BF5A00FAD099 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84759C172395BF5A00FAD099 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		84759C332395BF5D00FAD099 /* KioskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KioskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84759C372395BF5D00FAD099 /* KioskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioskUITests.swift; sourceTree = "<group>"; };
 		84759C392395BF5D00FAD099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84759C482395D76E00FAD099 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		84759C4B2395D7DE00FAD099 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BDA92D56FABBB0BCD38880E2 /* Pods_Kiosk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kiosk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2CFA3D8C9CBC28C449ECCFB /* Pods-Kiosk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kiosk.release.xcconfig"; path = "Target Support Files/Pods-Kiosk/Pods-Kiosk.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				334B78F6DE9D1B2D771926D9 /* Pods_Kiosk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +92,8 @@
 				84759C2B2395BF5D00FAD099 /* KioskTests */,
 				84759C362395BF5D00FAD099 /* KioskUITests */,
 				84759C132395BF5A00FAD099 /* Products */,
+				E1DD19528D743AD718136A32 /* Pods */,
+				ECA542E3C0925B2D15C67C93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +110,10 @@
 		84759C142395BF5A00FAD099 /* Kiosk */ = {
 			isa = PBXGroup;
 			children = (
+				84759C4A2395D7AA00FAD099 /* Utilities */,
+				84759C452395D74100FAD099 /* Views */,
 				84759C152395BF5A00FAD099 /* AppDelegate.swift */,
 				84759C172395BF5A00FAD099 /* SceneDelegate.swift */,
-				84759C192395BF5A00FAD099 /* ViewController.swift */,
 				84759C1B2395BF5A00FAD099 /* Main.storyboard */,
 				84759C1E2395BF5D00FAD099 /* Assets.xcassets */,
 				84759C202395BF5D00FAD099 /* LaunchScreen.storyboard */,
@@ -128,6 +140,56 @@
 			path = KioskUITests;
 			sourceTree = "<group>";
 		};
+		84759C452395D74100FAD099 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84759C472395D76000FAD099 /* ScanView */,
+				84759C462395D74E00FAD099 /* MainView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84759C462395D74E00FAD099 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				84759C192395BF5A00FAD099 /* ViewController.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		84759C472395D76000FAD099 /* ScanView */ = {
+			isa = PBXGroup;
+			children = (
+				84759C482395D76E00FAD099 /* ScanViewController.swift */,
+			);
+			path = ScanView;
+			sourceTree = "<group>";
+		};
+		84759C4A2395D7AA00FAD099 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				84759C4B2395D7DE00FAD099 /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E1DD19528D743AD718136A32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D85452235F6055D3D06FD5D /* Pods-Kiosk.debug.xcconfig */,
+				F2CFA3D8C9CBC28C449ECCFB /* Pods-Kiosk.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ECA542E3C0925B2D15C67C93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDA92D56FABBB0BCD38880E2 /* Pods_Kiosk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84759C3C2395BF5D00FAD099 /* Build configuration list for PBXNativeTarget "Kiosk" */;
 			buildPhases = (
+				3D3DDDDCE366FB3EC7E0D3F3 /* [CP] Check Pods Manifest.lock */,
 				84759C0E2395BF5A00FAD099 /* Sources */,
 				84759C0F2395BF5A00FAD099 /* Frameworks */,
 				84759C102395BF5A00FAD099 /* Resources */,
+				235FDB45BF69915930A8CC35 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,14 +318,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		235FDB45BF69915930A8CC35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kiosk/Pods-Kiosk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kiosk/Pods-Kiosk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kiosk/Pods-Kiosk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D3DDDDCE366FB3EC7E0D3F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kiosk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84759C0E2395BF5A00FAD099 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84759C4C2395D7DE00FAD099 /* Extensions.swift in Sources */,
 				84759C1A2395BF5A00FAD099 /* ViewController.swift in Sources */,
 				84759C162395BF5A00FAD099 /* AppDelegate.swift in Sources */,
 				84759C182395BF5A00FAD099 /* SceneDelegate.swift in Sources */,
+				84759C492395D76E00FAD099 /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +540,7 @@
 		};
 		84759C3D2395BF5D00FAD099 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D85452235F6055D3D06FD5D /* Pods-Kiosk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -444,12 +553,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiosk.Kiosk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		84759C3E2395BF5D00FAD099 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2CFA3D8C9CBC28C449ECCFB /* Pods-Kiosk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,7 +572,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiosk.Kiosk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
