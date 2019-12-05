@@ -121,7 +121,9 @@ class ScanViewController: UIViewController, QRCodeReaderViewControllerDelegate {
         
         // Or by using the closure pattern
         readerVC.completionBlock = { (result: QRCodeReaderResult?) in
-            print(result as Any)
+           
+            print(result!)
+           
             if result == nil{
                 self.readerVC.dismiss(animated: true, completion: {
                      self.navigationController?.popToRootViewController(animated: true)
@@ -132,7 +134,7 @@ class ScanViewController: UIViewController, QRCodeReaderViewControllerDelegate {
             {
                 
                 self.activityLottie()
-                           self.postService()
+                self.postService(Url: result?.value ?? "no url")
             }
            
 
@@ -164,11 +166,11 @@ class ScanViewController: UIViewController, QRCodeReaderViewControllerDelegate {
         dismiss(animated: true, completion: nil)
     }
     
-    func postService(){
+    func postService(Url: String){
         
-        let parameters: Parameters = ["email":"eve.holt@reqres.in"]//, "password": "pistol"]
+//        let parameters: Parameters = [:]//, "password": "pistol"]
              let headers    = ["Content-Type":"application/json"]
-        Alamofire.request("https://reqres.in/api/register?delay=3",method: .post, parameters: parameters, encoding: JSONEncoding.default,headers: headers).validate(statusCode: 200..<300)
+        Alamofire.request(Url,method: .get, parameters: nil, encoding: JSONEncoding.default,headers: headers).validate(statusCode: 200..<300)
                  .responseJSON { response in
                     self.loadingView.stop()
                     
